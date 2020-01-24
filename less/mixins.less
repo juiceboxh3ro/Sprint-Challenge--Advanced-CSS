@@ -1,1 +1,17 @@
 // Mixins Here
+
+.btn-generic() {
+  background-color: @btn-bg-color;
+  color: @porcelain;
+  font-family: @main-font;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 35%;
+
+  @media @mobile {
+    width: 100%;
+  }
+}
