@@ -8,11 +8,17 @@ nav {
     width: 800px;
     margin: 0 auto;
 
+
     .h1Wrapper {
       h1 {
         text-align: center;
         font-size: 4rem;
         padding: 10px 0;
+
+        @media @phone {
+          font-size: 5rem;
+          padding: 20px;
+        }
       }
     } // End of .h1Wrapper
 
@@ -25,11 +31,20 @@ nav {
         a {
           text-decoration: none;
           font-size: 1.8rem;
-          color: @shuttle-gray;
+          color: @ebony-clay;
           padding: 0 20px;
+
+          .active {
+            background-color: darken(@wild-sand, 10%);
+          }
         } // End of li a
       } // End of li
     } // End of .linkWrapper ul
+
+    @media @phone {
+      max-width: 500px;
+      margin: 0 auto;
+    }
   } // End of .innerWrap
 } // End of nav
 
@@ -39,5 +54,13 @@ nav {
 
   img {
     border-radius: 5px;
+    @media @phone {
+      max-width: 500px;
+    }
+  }
+  
+  @media @phone {
+    width: 500px;
+    margin: 0 auto;
   }
 }

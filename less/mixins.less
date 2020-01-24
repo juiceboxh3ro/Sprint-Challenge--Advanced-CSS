@@ -1,17 +1,27 @@
 // Mixins Here
 
-.btn-generic() {
+.btn-generic(@width, @align) {
   background-color: @btn-bg-color;
   color: @porcelain;
   font-family: @main-font;
   padding: 10px 15px;
-  text-align: center;
+  text-align: @align;
   font-size: 1.9rem;
   font-weight: 600;
   border-radius: 5px;
-  width: 35%;
+  width: @width;
+  transition: 0.3s ease-in;
+  border: 1px #fff solid;
 
-  @media @mobile {
-    width: 100%;
+  &:hover {
+    cursor: pointer;
+    background-color: @porcelain;
+    color: @btn-bg-color;
+    border: 1px @btn-bg-color solid;
   }
+}
+
+.walk-section(@width) {
+  width: @width;
+  margin: 0 auto;
 }
