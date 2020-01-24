@@ -4,6 +4,21 @@
 
   .intro {
 
+    .earthBanner {
+      width: 800px;
+      margin: 0 auto;
+    
+      img {
+        border-radius: 5px;
+        @media @phone { max-width: 500px; }
+      }
+      
+      @media @phone {
+        width: 500px;
+        margin: 0 auto;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
