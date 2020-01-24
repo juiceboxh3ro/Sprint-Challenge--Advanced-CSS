@@ -1,0 +1,51 @@
+.flexWrap {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nasaImage {
+    width: 90%;
+    margin-right: 10%;
+    
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+  }
+  
+  .intro .contact-mission {
+    width: 90%;
+  }
+}
+
+.theForm form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  
+  [id="name"], [id="email"], [id="subject"] {
+    .form-style();
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  [id="message"] {
+    .form-style();
+    width: 100%;
+    height: 15vh;
+  }
+  
+  [type="reset"] {
+    .btn-generic(30%, center);
+    margin-top: 15px;
+  }
+  
+  [type="submit"] {
+    .btn-generic(30%, center);
+    margin-top: 15px;
+  }
+
+}

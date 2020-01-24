@@ -1,1 +1,37 @@
 // Mixins Here
+
+.btn-generic(@width, @align) {
+  background-color: @btn-bg-color;
+  color: @porcelain;
+  font-family: @main-font;
+  padding: 10px 15px;
+  text-align: @align;
+  font-size: 1.9rem;
+  font-weight: 600;
+  border-radius: 5px;
+  width: @width;
+  transition: 0.3s ease-in;
+  border: 1px #fff solid;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @porcelain;
+    color: @btn-bg-color;
+    border: 1px @btn-bg-color solid;
+  }
+}
+
+.walk-section(@width) {
+  width: @width;
+  margin: 0 auto;
+}
+
+.form-style() {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  line-height: 2;
+  padding-left: 7px;
+  background-color: @btn-bg-color;
+  color: #fff;
+}
